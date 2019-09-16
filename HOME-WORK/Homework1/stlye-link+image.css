@@ -1,0 +1,17 @@
+#tieu-de {
+	color: blue;
+	font-family: UTM Helve;
+	font-size: 25px
+}
+#dantri {
+	font-family: UTM Helve;
+	color: white;
+	background-color: green;
+	font-size: 20px
+}
+div {
+	font-size: 16px
+}
+#anhthailan {
+	text-align: center;
+}
