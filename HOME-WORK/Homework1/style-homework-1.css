@@ -1,6 +1,16 @@
-#oppoA5s {
+div {
 	text-align: center;
 }
-#oppo {
+img {
 	width: 300px;
+}
+body {
+	background-color: yellow;
+	font-size: 18px;
+	font-family:'UTM';
+	src: url('font/UTM Helve.ttf');
+}
+@font-face {
+	font-family:'UTM';
+	src: url('font/UTM Helve.ttf');
 }
