@@ -1,0 +1,20 @@
+Tham khảo giao diện một số trang Image Gallery trên Theme Forest
+
+ 
+
+Bài tập
+
+Tạo trang Image Gallery, hiển thị 1 danh sách 10 hình ảnh trở lên
+
+ 
+Yêu cầu
+
+- Trang web phải có menu, banner (hoặc logo).
+
+- Hiển thị 2 - 3 ảnh trên 1 hàng. Ảnh nên có title và alt đầy đủ, các ảnh có thể kích thước khác nhau nhưng tỉ lệ nên giống nhau (ví dụ tỉ lệ chiều rộng và chiều dài là 2:3).
+
+- Layout không bị xô lệch, gióng hàng đều giữa các ảnh với nhau.
+
+- Xem tốt trên các màn hình desktop, không xuất hiện thanh cuộn ngang, ảnh không bị méo.
+
+- Có hiệu ứng khi hover lên ảnh (không vỡ layout)
