@@ -70,8 +70,12 @@ body {
 }
 
 .c:hover {
-	background-color: green;
-	transition: 0.5s;
+	/*background-color: green;*/
+	transition: 1s;
+	/*transform: rotate(-10deg);*/
+	/*transform: translate(10px, 20px)*/
+	/*transform: scale(1.2,1.2);*/
+	transform: skew(15deg, 30deg) 
 }
 .c {
 	width: 25%;
@@ -83,7 +87,7 @@ body {
 	bottom: 30px;
 	right: 30px;
 }
-.mess:hover {
-	width: 70px;
-	transition: 1s;
-}
+/*.mess:hover {
+	width: 7000px;
+	transition: 10s;
+}*/
