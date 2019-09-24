@@ -1,7 +1,11 @@
-* {
+/** {
 	list-style: none;
 }
-
+*/
 .menu1 {
 	display: block;
+	visibility: hidden;
+}
+.menu3 {
+	visibility: hidden;
 }
