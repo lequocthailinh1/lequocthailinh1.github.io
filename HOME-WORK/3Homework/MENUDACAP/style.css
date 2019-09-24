@@ -1,0 +1,88 @@
+* {
+	list-style: none;
+	padding-left: 0;
+/*	background-color: red;*/
+	white-space: nowrap;
+	/*overflow: hidden;*/
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+ul {
+	-webkit-box-shadow: -2px 2px 6px 0px rgba(50, 50, 50, 0.38);
+	-moz-box-shadow:    -2px 2px 6px 0px rgba(50, 50, 50, 0.38);
+	box-shadow:         -2px 2px 6px 0px rgba(50, 50, 50, 0.38);
+	padding-left: 0;
+	width: 300px;
+	background-color: white;
+}
+li {
+	border: 0px solid black;
+	background-color: white;
+}
+a {
+	text-decoration: none;
+}
+
+.menu1 {
+	border: 0px solid black;
+	/*width: 100px;*/
+	height: 20px;
+	text-align: left;
+/*	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;*/
+	 padding-left: 10px;
+}
+.menu2 {
+	border: 0px solid black;
+	visibility: hidden;
+	text-align: left;
+	width: 300px;
+	height: 480px;
+	position: absolute;
+	top: 34px;
+	left: 310px;
+	/*padding-left: 10px;*/
+}
+.menu3 {
+	border: 0px solid black;
+	visibility: hidden;
+	width: 300px;
+	height: 480px;
+	text-align: left;
+	position: absolute;
+	top: 0px;
+	left: 300px;
+	/*padding-left: 10px;*/
+}
+
+.hover:hover > ul {
+	visibility: visible;
+}
+
+a:link {
+  color: gray;
+}
+a:visited {
+  color: #757575;
+}
+a:hover {
+  color: orange;
+  background-color: #DCDCDC;
+}
+a:active {
+  color: orange;
+}
+
+li:hover {
+  color: orange;
+  background-color: #DCDCDC;
+}
+
+a {
+	display: block;
+	padding-left: 20px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
