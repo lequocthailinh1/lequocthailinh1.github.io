@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox 11</title>
+	<style>
+		.red {
+			background: red;
+		}
+		.green {
+			background: green;
+		}
+		.blue {
+			background: blue;
+		}
+		.yellow {
+			background: yellow;
+		}
+		.orange {
+			background: orange;
+		}
+		.parent {
+			border: 1px solid black;
+			height: 300px;
+			display: flex;
+		}
+		.child {
+			height: 200px;
+		}
+		.green, .blue, .yellow {
+			width: 100px;
+			align-self: center;
+		}
+		.orange {
+			flex-grow: 2;
+			align-self: flex-end;
+		}
+		.red {
+			flex-grow: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="child red">Red</div>
+		<div class="child green">Green</div>
+		<div class="child blue">Blue</div>
+		<div class="child yellow">Yellow</div>
+		<div class="child orange">Orange</div>
+	</div>
+	<img src="Flexbox_11.png" alt="Flexbox_11.png" width="100%">
+</body>
+</html>

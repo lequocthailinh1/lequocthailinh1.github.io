@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox 6</title>
+	<style>
+		.red {
+			background: red;
+		}
+		.green {
+			background: green;
+		}
+		.blue {
+			background: blue;
+		}
+		.parent {
+			border: 1px solid black;
+			height: 500px;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.child {
+			height: 200px;
+			width: 50%;
+			align-self: center;
+		}
+		.blue {
+			height: 200px;
+			flex-shrink: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="child red">Red</div>
+		<div class="child green">Green</div>
+		<div class="child blue">Blue</div>
+	</div>
+	<img src="Flexbox_6.png" alt="Flexbox_6.png" width="100%" style="margin-top: 100px">
+</body>
+</html>

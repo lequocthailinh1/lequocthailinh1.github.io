@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Layout 3</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<style>
+		header {
+			margin-bottom:30px;
+		}
+
+		.container {
+			display: grid;
+			grid-template-columns: 22% 4% 74%;
+			grid-template-areas: 
+			"a1 a1 a1"
+			"b1 . b3"
+			"c1 c1 c1"
+		}
+		.mainheader {
+			padding: 2em 0 2em 0;
+			grid-area: a1;
+			font-size: 2em;
+		}
+
+		.left {
+			grid-area: b1;
+			font-size: 1.3em;
+		}
+
+		.maincontent {
+			grid-area: b3;
+			font-size: 1.3em;
+		}
+
+		.mainfooter {
+			background-color: #666;
+			color: #fff;
+			padding: 10px;
+			border-radius: 5px;
+			grid-area: c1;
+			font-size: 1.5em;
+		}
+
+		.panels  {
+			list-style: none;
+			margin: 1em 0 1em 0;
+			padding: 0;
+			display: flex;
+			justify-content: space-between;
+			height: 500px;
+		}
+
+		.panels li {
+			background-color: #efefef;
+			border-radius: 5px;
+			padding: 10px;
+			box-sizing: border-box;
+			width: 27%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header class="mainheader">
+			<h1>Example layout</h1>
+		</header>
+
+		<div class="left">
+
+			<nav>
+				<ul>
+					<li><a href="">Link One</a></li>
+					<li><a href="">Link Two</a></li>
+					<li><a href="">Link Three</a></li>
+					<li><a href="">Link Four</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="maincontent">
+			<p>This is an example layout using the Skeleton Framework but replacing the Skeleton Grid with Grid Layout, and also using Flexbox for elements.</p>
+
+			<ul class="panels">
+				<li><h4>Panel 1</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed mauris a urna ultrices ultrices et nec leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis faucibus fringilla sapien luctus mattis. Ut ut dui in est lacinia mollis.</p>
+				</li>
+				<li><h4>Panel 2</h4>
+					<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed fermentum ligula neque, non suscipit ipsum elementum non.</p>
+				</li>
+				<li><h4>Panel 3</h4>
+					<p>Aliquam a convallis nulla. Nam mollis mauris urna, et dapibus lacus aliquam vel.</p>
+				</li>
+			</ul>
+		</div>
+
+
+
+		<footer class="mainfooter">
+			<p>Find out about Skeleton <a href="http://getskeleton.com/">here</a>.</p>
+
+		</footer>
+	</div>
+
+
+</body>
+</html>
