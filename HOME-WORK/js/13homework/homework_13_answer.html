@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BT Document Object Model</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin nunc eros, et faucibus sem consectetur in. Mauris sit amet tempus ante. Ut hendrerit malesuada felis, non lacinia augue ultricies non. Donec maximus non quam et hendrerit. Aenean et dui ac velit varius commodo ac vel nunc. Vivamus vitae nisl sed purus fringilla bibendum. Donec sit amet nulla sit amet nisl lobortis feugiat. Quisque elementum euismod rutrum. Etiam porttitor a lacus nec vehicula. Aliquam erat volutpat. Donec in dolor eleifend, aliquam magna eget, tincidunt lectus. Vestibulum nulla nulla, tristique at sapien in, pellentesque consequat orci. Morbi sit amet vestibulum nisl. Morbi eget enim tortor. Fusce tincidunt metus et lobortis tincidunt.</p>
+
+    <p id="p2">Phasellus quis porta enim. Quisque et tortor vel sem laoreet laoreet. Nunc gravida sollicitudin semper. Duis commodo convallis massa, eget posuere metus luctus nec. Sed euismod hendrerit justo, at aliquet neque vulputate venenatis. Morbi molestie vehicula maximus. In dapibus, nulla ut fermentum ornare, ante eros elementum libero, in luctus massa metus in diam. Sed vel sodales velit, tincidunt imperdiet tellus. Vestibulum et arcu dolor. Sed maximus, nunc sit amet porttitor egestas, metus odio lobortis nulla, et rutrum ipsum lectus id nisi. Nunc porttitor id sapien ac condimentum. Suspendisse potenti.</p>
+
+    <p id="p3">Pellentesque maximus non ligula a consequat. Morbi vitae libero at ligula cursus venenatis. Aenean iaculis tincidunt nisi, sit amet feugiat risus egestas lacinia. Suspendisse convallis quis magna pellentesque mollis. Maecenas at lectus suscipit, eleifend magna et, pulvinar ipsum. Mauris sit amet orci a elit congue ullamcorper. Proin iaculis elit nec euismod scelerisque. Curabitur elementum tempor velit. Vivamus nec sem elementum, ultricies magna iaculis, scelerisque risus. Cras at facilisis felis, ac lacinia odio. Aenean tristique tempor massa, et mattis ante fringilla at. Proin metus lacus, dictum sit amet fermentum in, mattis sit amet purus.</p>
+  
+    <script>
+        let p = document.getElementsByTagName("p"); 
+        //Đây gọi là kỹ thuật caching. 
+        //Chỉ bắt document.getElement... chạy 1 lần thôi, rồi lưu nó lại. Các lần sau không phải bắt tìm lại trong cây DOM nữa. Sẽ tối ưu về performance.
+
+        function changeColor() {
+            p[0].style.color = "green";
+            p[1].style.color = "yellow";
+            p[2].style.color = "red";
+        }
+        //changeColor();
+
+
+
+        function changeBgColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+        //changeBgColor("red");
+
+
+
+        function copyContent(index1, index2) {
+            p[index1 - 1].innerText = p[index2 - 1].innerText;
+        }
+        //copyContent(1, 2);
+
+
+
+        function changeFontSize(x) {
+            for (let i = 0; i < p.length; i++) {
+                p[i].style.fontSize = x + "px";
+            }
+            return x + "px";
+        }
+        //changeFontSize(25);
+
+        function increaseFontSize(order) {
+            let paragraph = p[order - 1];
+            let currentSize = parseInt(getComputedStyle(paragraph).fontSize);
+
+            if (currentSize < 30) {
+                paragraph.style.fontSize = currentSize + 1 + "px";
+                currentSize++; 
+            }
+            else {
+                alert("fontSize 30px là to hết cỡ rồi.");
+            }
+        }
+        //increaseFontSize(1);
+
+
+
+
+
+        function decreaseFontSize(order) {
+            let paragraph = p[order - 1];
+            let currentSize = parseInt(getComputedStyle(paragraph).fontSize);
+
+            if (currentSize > 10) {
+                paragraph.style.fontSize = currentSize - 1 + "px";
+                currentSize--; 
+            }
+            else {
+                alert("fontSize 10px là nhỏ hết cỡ rồi.");
+            }
+        }
+        //decreaseFontSize(1);
+
+
+    
+        
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework_9_answer</title>
+	<style type="text/css">
+		pre {
+			font-family: sans-serif;
+			white-space: pre-wrap;
+		}
+	</style>
+</head>
+<body>
+	<pre>Bài 1. Cho 1 chuỗi, hãy viết hàm có tác dụng sao chép chuỗi đó lên 10 lần, ngăn cách nhau bởi ký tự "-". Ví dụ cho chuỗi "123" thì kết quả sẽ là "123-123-123-123-123-123-123-123-123-123".</pre>
+
+	<script type="text/javascript">
+		function duplicate10Times (str) {
+			var result = str;
+
+			for (var i = 1; i < 10; i++) {
+
+				result += `-${str}`;
+			}
+
+			document.write(result);
+		}
+
+		//duplicate10Times(123);
+	</script>
+
+	<pre>Bài 2. Viết 1 hàm dùng để tính giai thừa của 1 số. Kiểm tra tham số đầu vào phải là 1 số nguyên >= 0, sau đó tính giai thừa và in ra kết quả.</pre>
+
+	<script type="text/javascript">
+		// Bước 1: kiểm tra input có phải số nguyên >= 0 không?
+		function checkNumber (num) {
+			var isNumber = !isNaN(num);
+			var isInteger = Number.isInteger(num);
+
+			if (isNumber && isInteger && num >= 0) return true;
+			else return false;
+		}
+
+		//Bước 2: tính giai thừa
+		function factorialCalc (num) {
+
+			if (checkNumber(num)) {
+				var factorial = 1;
+
+				for (var i = 1; i <= num; i++) {
+					factorial = factorial * i;
+				}
+
+				return factorial;
+
+			} else console.warn('Input không hợp lệ. Hãy nhập số NGUYÊN >= 0. Thanks!');
+		}
+	</script>
+
+	<pre>- Bài 6. Chỉ dùng vòng lặp for hoặc while, viết function in ra màn hình các số từ 1 đến 100 sao cho những giá trị là chẵn sẽ có màu xanh, những giá trị là lẻ có màu đỏ.</pre>
+
+	<script>
+		function printRedGreen() {
+			for (var i = 1; i <= 100; i++) {
+
+				if (i % 2) document.writeln(`<span style="color: red">${i}</span>`);
+				else document.writeln(`<span style="color: green">${i}</span>`);
+			}
+		}
+	</script>
+
+	<pre>Bài 3: Viết nốt lời bài hát sau:
+
+		99 bottles of beer on the wall
+		99 bottles of beer
+		Take one down, pass it around
+		98 bottles of beer on the wall
+
+		98 bottles of beer on the wall
+		98 bottles of beer
+		Take one down, pass it around
+		97 bottles of beer on the wall
+
+	... vân vân cho tới khi đạt tới số 0.</pre>
+
+	<script type="text/javascript">
+		function writeLyrics () {
+			for (var i = 99; i > 0 ; i--) {
+				document.write(`${i} bottles of beer on the wall <br>`);
+				document.write(`${i} bottles of beer <br>`);
+				document.write(`Take one down, pass it around <br>`);
+				document.write(`${i - 1} bottles of beer on the wall <br>`);
+				document.write(`<br>`);
+			}
+		}
+
+		//writeLyrics();
+	</script>
+
+	<pre>Bài 4: Viết game Đoán Số như sau:
+
+		Máy tính sẽ chọn ra 1 số ngẫu nhiên trong khoảng từ 1 đến 10.
+
+		Người chơi sẽ được hỏi "số ngẫu nhiên đó là bao nhiêu?" và phải nhập vào 1 số (dùng prompt() ). 
+
+		Ở mỗi lượt đoán, máy tính sẽ thông báo cho người chơi biết:
+		"nhỏ hơn rồi" (nếu số họ đoán nhỏ hơn kết quả)
+		"lớn hơn rồi" (nếu số họ đoán lớn hơn kết quả)
+		"bạn đã đoán đúng" (nếu số họ đoán bằng kết quả)
+		"thông tin nhập vào không hợp lệ" (nếu thứ họ nhập vào không thể đem so sánh với kết quả được)
+
+		Nếu họ đoán sai, họ có thể đoán tiếp. Quá trình lặp lại tương tự.
+
+		Trò chơi kết thúc khi người chơi đoán đúng, hoặc họ bấm "Cancel" ở hộp thoại prompt().
+
+		[Nâng cao] (phần này ai làm được thì làm)
+		Người chơi chỉ có 3 lượt đoán.
+	Khi họ đoán lượt đầu tiên và sai, máy tính sẽ thông báo cho họ "còn 2 lượt", cứ như thế cho tới khi họ không còn lượt nào. Và "game over".</pre>
+
+	<script type="text/javascript">
+		// Không có mạng
+
+
+		//Bước 1
+		var random = Math.floor(Math.random() * 10 + 1);
+
+		function game() {
+			//Bước 2
+			var input = prompt(`Máy sẽ tự động chọn 1 số NGUYÊN ngẫu nhiên từ 1 đến 10.
+Đố bạn đoán trúng đấy.`);
+
+			//Bước 3
+			if (input === null) return null; //Trường hợp 3.1
+			else validate(input);
+
+		}
+
+		function validate(input) { //Trường hợp 3.2
+			input = Number(input);
+
+			if (!Number.isInteger(input) || input > 10 || input < 1) {
+				alert('Hãy nhập các số NGUYÊN trong khoảng từ 1 đến 10');
+				game();
+			} else soSanh(input, random); //Bước 4
+		}
+
+		function soSanh(input, random) {
+			if (input > random) {
+				alert('Lớn hơn rồi. Xin mời nhập lại.');
+				game();
+			} else if (input < random) {
+				alert('Nhỏ hơn rồi. Xin mời nhập lại.');
+				game();
+			} else alert('Đúng rồi!');
+		}
+	</script>
+</body>
+</html>

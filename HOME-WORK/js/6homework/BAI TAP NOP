@@ -1,0 +1,28 @@
+function bai1(a) {
+ 	return (`${a} bình phương = ${a*a}`)   
+}
+undefined
+bai1(7)
+"7 bình phương = 49"
+function bai2(b) {
+return (` Năm ${b} là thế kỷ ${Math.floor(`${b/100+1}`)} nhé`);
+}
+undefined
+bai2(1975)
+" Năm 1975 là thế kỷ 20 nhé"
+a = "012345678910111213"
+"012345678910111213"
+function bai3() {
+ return (`Mười ký tự đầu của a là ${a.substring (0,10)}...`)  
+}
+undefined
+bai3()
+"Mười ký tự đầu của a là 0123456789..."
+b = "chuoi viet hoa chu dau tien"
+"chuoi viet hoa chu dau tien"
+function bai4() {
+ return b.charAt(0).toLocaleUpperCase() + b.substring(1,27)   
+}
+undefined
+bai4()
+"Chuoi viet hoa chu dau tien"

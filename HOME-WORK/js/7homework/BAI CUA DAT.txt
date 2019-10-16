@@ -1,0 +1,118 @@
+// Bài 1: Bắt người dùng nhập số hoặc ấn hủy
+var checkIfNumber = function() {
+  var input = prompt ("Mời bạn nhập số"); 
+  if (typeof input != "object") {
+    if (Number(input) == 0 || Number(input)) {
+      alert("Bạn đã nhập số");
+    }
+    else {
+      alert("Bạn đã không nhập số");
+      checkIfNumber();
+    }
+  }
+}
+
+// Bài 2.1: Sử dụng câu lệnh if để viết 1 hàm với 2 tham số bất kỳ, 
+// kiểm tra xem 2 tham số có phải là number không 
+// và tìm ra số lớn nhất trong 2 số đó.
+var findBigger = function(x, y) {
+  if ((Number(x) == 0 || Number(x)) && (Number(y) == 0 || Number(y))) {
+    if (x > y) {
+      return x;
+    }
+    return y;
+  }
+  return null;
+}
+
+// Bài 2.2: Viết 1 hàm dùng để tính giai thừa của 1 số. 
+// Kiểm tra tham số đầu vào phải là 1 số nguyên >= 0, 
+// sau đó tính giai thừa và in ra kết quả.
+var giaiThua = function(x) {
+  if (Math.ceil(x) === x) {
+    if (x == 0) {
+      return 1;
+    }
+    else if (x > 0) {
+      x *= giaiThua(x - 1);
+      return x;
+    }
+  }
+  return null;
+}
+
+// Bài 2.3: Một trang web cho phép người dùng tạo tài khoản. 
+// Hãy viết hàm kiểm tra tính hợp lệ của thông tin người dùng nhập vào. 
+// Nếu hợp lệ trả về "Pass", nếu không hợp lệ trả về "Fail".
+var checkAcc = function() {
+  username = prompt("Username:");
+  password = prompt("Password:");
+  confirm = prompt("Confirm password:");
+  if ((username && username.length <= 20) && (6 <= password.length && password.length <= 32) && (confirm == password)) {
+    return "Pass";
+  }
+  return "Fail";
+}
+
+// Bài 2.4: In ra màn hình ngày, tháng năm hiện tại 
+// và xác định đó là mùa nào trong năm.
+var whatSeasonIsIt = function() {
+  var now = new Date();             
+  var date = now.getDate();         
+  var month = now.getMonth() + 1;   // Comment to test
+  // var month = prompt("Nhập tháng muốn kiểm tra:") // Uncomment to test
+  var year = now.getFullYear();     
+  var seasion = "đông";
+  if (month < 4) {
+    seasion = "xuân";
+  }
+  else if (month < 7) {
+    seasion = "hè";
+  }
+  else if (month < 10) {
+    seasion = "thu";
+  }
+  var result = `Hôm nay là ngày ${date}/${month}/${year}, đang là mùa ` + seasion;
+  return result
+}
+
+// Bài 2.5: Một sinh viên có điểm kiểm tra môn lập trình web là x dưới dạng số (0 <= x <= 10). 
+// Hãy chuyển điểm số sang dạng chữ
+var convertScores = function(x) {
+  if (x <= 10) {
+    if (x >= 8.5) {
+      return "A";
+    }
+    else if (x >= 7) {
+      return "B";
+    }
+    else if (x >= 5.5) {
+      return "C";
+    }
+    else if (x >= 4) {
+      return "D";
+    }
+    else if (x >= 0) {
+      return "F";
+    }
+  }
+  return null;
+}
+
+// Bài 2.6: Viết hàm translate() có tác dụng dịch từ "Hello" sang 5 thứ tiếng khác nhau (tự chọn) 
+// với tham số truyền vào là mã quốc gia, 
+// sử dụng switch và mặc định dịch sang tiếng Việt.
+var translate = function(countryCode) {
+  switch (countryCode) {
+    case 81:                // Japan
+      return "こんにちは";
+    case 49:                // Germany
+      return "Hallo";
+    case 7:                 // Russia
+      return "Привет";
+    case 33:                // France
+      return "salut";
+    default:                // Vietnam
+      return "Xin chào";
+  }
+}

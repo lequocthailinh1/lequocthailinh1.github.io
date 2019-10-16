@@ -1,0 +1,209 @@
+<!-- - Bài 1. Viết 1 function lấy ra 1 số nhỏ nhất trong 1 mảng các số.
+
+Tham số truyền vào là 1 mảng các số.
+Kết quả là số nhỏ nhất trong mảng.
+Gợi ý: có thể dùng phương thức sort() hoặc object Math, chú ý khi sort số khác với chữ.
+ -->
+<script>
+  var isSmallest = function(arr) {
+    return Math.min(...arr);
+  }
+
+  //isSmallest([1, 4, 7])
+</script>
+
+<!-- - Bài 2. Cho 1 chuỗi, hãy viết hàm đảo ngược chuỗi đó. Ví dụ cho chuỗi "hello" thì kết quả trả về sẽ là "olleh". Gợi ý: 1 chuỗi tương tự 1 mảng với mỗi phần tử là 1 ký tự trong chuỗi. -->
+
+<script type="text/javascript">
+  var reverseString = function(str) {
+    //tách mỗi ký tự thành 1 thành viên của mảng
+    var arr = str.split('');
+
+    //đảo ngược vị trí các thành viên của mảng
+    arr.reverse();
+
+    //nối từ mảng ngược trở lại thành ch
+    var newStr = arr.join('');
+
+    return newStr;
+  }
+
+  //reverseString("hello");
+</script>
+
+<!-- - Bài 3. Cho 1 mảng tên của n học viên. Viết function sắp xếp lại thứ tự các học viên theo bảng chữ cái và in ra màn hình danh sách học viên kèm theo số thứ tự (sử dụng document.write()). -->
+
+<script type="text/javascript">
+  var sortName = function(arr) {
+    arr.sort();
+
+    arr.forEach(function (item, index) {
+      document.write(`${index}: ${item} <br>`);
+    });
+
+  }
+
+  //sortName(["Alibaba", "Kane", "Steven", "Mike", "Suzy"]);
+</script>
+
+<!-- - Bài 4. Cho 1 mảng các số. Viết function tạo ra 1 mảng mới với các số là số dư tương ứng khi chia các số trong mảng cũ cho 2. Gợi ý: Để lấy số dư của 1 số cho 2 ta dùng toán tử %. Ví dụ: 5 % 2 = 1 (5 chia 2 dư 1). -->
+
+<script>
+  var remain = function(arr) {
+    return arr.map(function(item) {
+      return item % 2;
+    })
+  }
+
+  //remain([1,2,3,4])
+</script>
+
+- Bài 5. Cho 1 mảng chỉ gồm các giá trị true và false. Hãy kiểm tra xem giá trị true xuất hiện lần đầu trong mảng ở vị trí nào.
+// Gợi ý: Hãy tự đi tìm array method thích hợp trên w3schools cho bài này
+
+<script type="text/javascript">
+  var indexOfTrue = function(arr) {
+    return arr.indexOf(true);
+  }
+
+  //indexOfTrue([false, true, false, true]);
+</script>
+
+- Bài 6. Viết hàm truyền vào một mảng các số và tính ra tổng các số đó.
+
+<script type="text/javascript">
+  var getSum = function(arr) {
+    return arr.reduce(function(total, num) {
+      return total + num;
+    }, 0);
+
+
+    //Nếu dùng forEach()
+
+    // var sum = 0;
+
+    // arr.forEach(item => sum += item);
+
+    // return sum;
+  }
+
+  //getSum([1,2,3,4,5,6,7,8,9]);
+</script>
+
+- Bài 7: Cho một mảng các chuỗi là tên các học viên. Viết hàm lọc ra những học viên  có tên bắt đầu bằng chữ H (không phân biệt hoa thường).
+
+<script type="text/javascript">
+  var filterH = function(arr) {
+    var newArr = arr.filter(function(item) {
+      return item[0].toUpperCase() === "H";
+    });
+
+    return newArr;
+  }
+
+  //filterH(["Helen", "Helios", "Dara", "hello"]);
+</script>
+
+========================
+NÂNG CAO - KHÔNG BẮT BUỘC
+
+- Bài 8: Cho 1 mảng như sau. Viết function sắp xếp lại thứ tự các học viên theo bảng chữ cái và in ra màn hình danh sách học viên kèm theo số id.
+[
+  {name: "Alibaba", id: 1},
+  {name: "Kane", id: 2},
+  {name: "Steven", id: 3},
+  {name: "Mike", id: 4},
+  {name: "Suzy", id: 5}
+]
+
+Kết quả sau khi sắp xếp phải là:
+[
+  {name: "Alibaba", id: 1}
+  {name: "Kane", id: 2}
+  {name: "Mike", id: 4}
+  {name: "Steven", id: 3}
+  {name: "Suzy", id: 5}
+]
+
+<script type="text/javascript">
+function sortName(arr) {
+    arr.sort(function(a, b) { //ở đây chỉ là truyền các cặp phần tử của array (là các cặp object) vào function
+
+      if (a.name < b.name) return -1;
+      //a.name; lấy property name của object a
+      //sort theo property name của cặp object truyền vào
+      else if (a.name > b.name) return 1;
+      else return 0;
+    });
+
+    console.log(arr);
+  }
+
+  /*sortName([
+  {name: "Alibaba", id: 1},
+  {name: "Kane", id: 2},
+  {name: "Steven", id: 3},
+  {name: "Mike", id: 4},
+  {name: "Suzy", id: 5}
+  ]);*/
+</script>
+
+- Bài 9:
+Một toà lâu đài có 100 cánh cửa, ban đầu ở trạng thái đóng.
+
+Bạn sẽ đi thăm toà lâu đài đó 100 lần.
+
+Mỗi lần đi thăm sẽ tác động lên một số cánh cửa. Tác động nghĩa là nếu cánh cửa đang đóng thì mở nó, nếu cánh cửa đang mở thì đóng nó.
+
+Lần đi thăm thứ nhất, tác động vào tất cả các cánh cửa. (tức là sẽ mở 100 cánh cửa đang đóng. Lúc này 100 cánh cửa đều mở.)
+
+Lần đi thăm thứ 2, tác động vào các cánh cửa số 2, 4, 6, ..., 98, 100. (tức là đóng các cánh cửa số 2, 4, 6, ...)
+
+Lần đi thăm thứ 3, tác động vào các cánh cửa số 3, 6, 9, ..., 96, 99.
+
+Cứ như thế... cho tới khi:
+
+Lần đi thăm thứ 100, tác động vào duy nhất cánh cửa số 100.
+
+**Câu hỏi**
+Ký hiệu 1 là open, 0 là closed
+Dùng 1 mảng để diễn tả trạng thái của 100 cánh cửa như sau
+doorsStatus = [0, 0, 0, 0, ..., 0] (100 số 0)
+Sau lần thăm thứ nhất, doorsStatus = [1, 1, ..., 1] (100 số 1)
+...
+Sau lần thăm thứ 100, doorsStatus = ???
+
+<script type="text/javascript">
+  //1 là open. 0 là closed
+
+
+  var doorsGame = function() {
+    var arr = [];
+
+    for (var i = 1; i <= 100; i++) {
+      arr.push(0);
+    }
+
+    for (var j = 1; j <= 100; j++) {
+      for (var i = 1; i <= 100; i++) {
+
+        if (i % j == 0) arr[i-1] = 1 - arr[i-1];
+      }
+    }
+
+    console.log(arr);
+  }
+
+  //doorsGame()
+
+
+
+  //Cách nghĩ vòng lặp lồng nhau
+  // for (var i = 1; i <= 100; i++) {
+    
+  //  if (i % 1 == 0) arr[i-1] = 1 - arr[i-1];
+  //  if (i % 2 == 0) arr[i-1] = 1 - arr[i-1];
+  //  if (i % 3 == 0) arr[i-1] = 1 - arr[i-1];
+  //  .....
+  // }
+  </script>
