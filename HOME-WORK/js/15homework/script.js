@@ -24,7 +24,13 @@ $("#mu2").on("click", function(){
 })
 
 $("#can2").on("click", function(){
-	$("#input").val(Math.sqrt($("#input").val()))
+	let kqcan2 = Math.sqrt($("#input").val())
+	console.log(kqcan2, typeof(kqcan2))
+	if (!(kqcan2) || kqcan2 == 0){
+		alert (`sdkghskgj`);
+		$("#input").val("");
+	}
+	else $("#input").val(Math.sqrt($("#input").val()))
 })
 
 $("#giaithua").on("click", function(a){
@@ -43,4 +49,4 @@ $("#giaithua").on("click", function(a){
 	$("#input").val(tinhgiaithua(n))
 })
 
-
+// 9/0

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ĐĂNG KÝ TÀI KHOẢN</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<p class="create">Create your Account</p>
+	<div class="chinh">
+		<form class="form0">
+		<fieldset class="first">
+			<legend>First name:</legend>
+			<div class="div1"><label for="firstName"></label><input class="input" type="text" id="firstName" name="firstName" placeholder="First name" value=""><span class="efn span">Bạn chưa nhập tên của mình</span></div>
+		</fieldset>
+
+		<fieldset class="last">
+			<legend>Last name:</legend>
+			<div class="div1"><label for="lastName"></label><input class="input" type="text" id="lastName" name="lastName" placeholder="Last name" value=""><span class="eln span">Bạn chưa nhập họ của mình</span></div>
+		</fieldset>
+
+		<fieldset class="user">
+			<legend>User name:</legend>
+			<div class="div1"><label for="userName"></label><input class="input" type="text" id="userName" name="userName" placeholder="User name" value=""><span class="eun span">Bạn nhập không đúng Tên người dùng</span></div>
+			<p class="chuthich">Tên đăng nhập phải từ 8 đến 30 ký tự, theo bảng chữ cái tiếng anh, viết thường, được phép có các ký tự số, dầu chấm, gạch dưới, gạch chân.</p>
+		</fieldset>
+		<fieldset class="pass">
+			<legend>Password</legend>
+			<div class="div1"><label for="password"></label><input class="input" type="password" id="password" name="password" placeholder="Password" value=""><span class="epas span">Bạn nhập không đúng Mật khẩu</span></div>
+			<p class="chuthich">Mật khẩu phải dài từ 4 đến 16 ký tự và bao gồm ít nhất một chữ số.</p>
+		</fieldset>
+		<fieldset class="cfirm">
+			<legend>Confirm</legend>
+			<div class="div1"><label for="confirm"></label><input class="input" type="password" id="confirm" name="confirm" placeholder="Confirm" value=""><span class="ecf span">Bạn đã xác nhận sai mật khẩu</span></div>
+			<p class="chuthich">Xác nhận mật khẩu của bạn</p>
+		</fieldset>
+		<div class="sendbox" >
+			<input class="send" type="submit" value="Send">
+		</div>
+	</form>
+	</div>
+
+
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="script.js"></script>
+
+</body>
+</html>

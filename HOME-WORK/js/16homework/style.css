@@ -1,0 +1,122 @@
+
+* {
+	box-sizing: border-box;
+}
+body {
+	background-image: url(backgroundpng2.png);
+	background-position: top;
+  	background-repeat: no-repeat;
+  	background-size: 100%;
+}
+/*.form0 {
+	display: grid;
+	justify-content: center;
+	grid-template-areas:
+	grid-template-rows:  20% 20% 20% 20% 20%;
+	grid-template-columns: 50% 20% 10% 20%;
+	grid-template-areas:
+	"a1 a2 a3 a4"
+	"b1 b2 . b4"
+	"c1 c2 c2 c2"
+	"d1 d2 d2 d4"
+	"e1 e2 e2 e4"
+}*/
+fieldset{
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;
+}
+.form0 {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+ .input {
+ 	width: 272px;
+ }
+ p {
+ 	width: 272px;
+ 	margin-top: 5px;
+ 	margin-bottom: 0px;
+ }
+/*.create {
+	height: 20px;
+	grid-area: a1;
+}*/
+.first {
+ 	width: 300px;
+	border-color:#0dc951;
+}
+
+.last {
+	width: 300px;
+	border-color:#0dc951;
+}
+
+.user {
+	width: 300px;
+	border-color:#0dc951;
+}
+ .pass {
+ 	width: 300px;
+ 	border-color:#0dc951;
+ }
+  .cfirm {
+  	width: 300px;
+  	border-color:#0dc951;
+  }
+.chinh {
+	width: 400px;
+	height: 550px;
+    border-width: 5px;
+    border-style: groove;
+    border-color: #93ff00;
+    border-image: initial;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+	top: 20px;
+	left: 750px;
+	-webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+.send {
+	width: 100px;
+	height: 50px;
+	background-image: url(background.jpg);
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: 150%;
+  	position: 	absolute;
+  	top: 455px;
+  	left: 	247px;
+}
+.chuthich {
+	padding-top: 5px;
+	font-size:10px;
+}
+
+span {
+	display: none;
+	font-size: 10px;
+	color: red;
+}
+
+.create {
+	width: 	700px;
+	font-size: 	70px;
+	position: 	absolute;
+	top: 	50px;
+	left: 	100px;
+	color: 	red;
+}
