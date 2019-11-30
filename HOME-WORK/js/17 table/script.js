@@ -54,6 +54,10 @@ $(".g").on("click", function() {
 	$("tr:odd").css("background-color", "#ceced7"); //cho nó thành những cái chẵn có màu
 })
 
+
+
+
+
 // Lọc title
 $(".t").on("click", function() {
 	$("tr:not(.thead)").remove()

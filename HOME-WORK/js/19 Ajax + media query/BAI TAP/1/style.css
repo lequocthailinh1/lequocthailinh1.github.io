@@ -1,0 +1,21 @@
+img {
+	width: 33.333333%;
+	padding: 	7.5px;
+	box-sizing: 	border-box;
+}
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: black;
+	padding: 7.5px;
+}
+@media only screen and (max-width: 	500px){
+	img {
+		width: 	100%;
+		box-sizing: border-box;
+		padding:7.5px;
+	}
+	.container {
+		padding: 12.5px;
+	}
+}
