@@ -1,0 +1,253 @@
+.navbar {
+  display: flex;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.banner{
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.main1 {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.grow {
+  flex-grow: 1;
+}
+.collapse{
+  display: flex;
+  justify-content: flex-end;
+}
+.minimø {
+  font-size: 30px;
+  font-family: "Myriad Pro";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 0.8;
+  text-align: center;
+  margin: 20px;
+}
+.lifestyle {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  text-transform: uppercase;
+  line-height: 1.714;
+  margin: 20px;
+  text-align: center;
+}
+.photodiary {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  text-transform: uppercase;
+  line-height: 1.714;
+  margin: 20px;
+  text-align: center;
+}
+.travel {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  text-transform: uppercase;
+  margin: 20px;
+  text-align: center;
+}
+.music {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  text-transform: uppercase;
+  line-height: 1.714;
+  margin: 20px;
+  text-align: center;
+}
+.card {
+  border-radius: 0px;
+  border: 0px;
+}
+.titcard1 {
+  font-size: 14px;
+  font-family: "Ubuntu";
+  color: rgb(180, 173, 158);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.titcard2 {
+  font-size: 30px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 1.2;
+}
+.main1{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.banner{
+  margin-bottom: 50px;
+}
+.The_perfect_weekend_getaway_ {
+  font-size: 30px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 1.2;
+}
+
+.img {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.Duis {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  font-style: italic;
+  line-height: 1.714;
+  text-align: left;
+}
+.Duis2 {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 1.714;
+  text-align: left;
+}
+
+.banner2 {
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+  height: 600px;
+  margin-right: 0px;
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.Duis3 {
+  font-size: 20px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 1.2;
+}
+.you_may_also_like {
+  font-size: 14px;
+  font-family: "Ubuntu";
+  color: rgb(180, 173, 158);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.banner3{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.col-lg-4 {
+  background-color: rgb(240, 240, 240);
+}
+.binh {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.imgb {
+  border-radius: 50%;
+}
+
+.Reply {
+  font-size: 14px;
+  font-family: "Ubuntu";
+  color: rgb(180, 173, 158);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.Sed_ut {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 1.714;
+}
+.name {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.col-lg-1 {
+  padding: 1.25rem;
+}
+.Reply {
+  padding-left: 1.25rem;
+}
+
+.a {
+  border: 1px solid #c8c8c8;
+  margin: 20px;
+}
+.Join_the_discussion {
+  font-size: 14px;
+  font-family: "Ubuntu";
+  color: rgb(200, 200, 200);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+/*footer*/
+
+.footer{
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+  height: 287px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grow {
+  flex-grow: 1;
+}
+.Terms_and_conditions {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(0, 0, 0);
+  line-height: 1.714;
+  z-index: 306;
+  padding-right: 20px;
+}
+.Privacy {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(0, 0, 0);
+  line-height: 1.714;
+  z-index: 307;
+}
+/*.row {
+
+*/
+.Follow {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(0, 0, 0);
+  line-height: 1.714;
+  z-index: 308;
+}
+
+.Connected_with {
+  font-size: 14px;
+  font-family: "Ubuntu";
+  color: rgb(180, 173, 158);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: right;
+}

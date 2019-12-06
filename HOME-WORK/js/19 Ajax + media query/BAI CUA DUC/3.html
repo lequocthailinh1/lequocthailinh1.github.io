@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Layout 3</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            padding: 0 10px;
+            margin-top: 30px;
+        }
+
+        .flex-item {
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        .desktop-66 {
+            flex-basis: calc(100% / 3 * 2);
+            max-width: calc(100% / 3 * 2);
+        }
+
+        .desktop-33 {
+            flex-basis: calc(100% / 3);
+            max-width: calc(100% / 3);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .flex-container {
+                padding: 15px;
+                grid-template-columns: auto;
+            }
+
+            .flex-item {
+                padding: 0;
+            }
+
+            .tablet-100 {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item desktop-66 tablet-100 grid-container">
+            <img class="grid-item" src="https://via.placeholder.com/500x250" alt="img">
+            <img class="grid-item" src="https://via.placeholder.com/500x250" alt="img">
+            <img class="grid-item" src="https://via.placeholder.com/500x250" alt="img">
+            <img class="grid-item" src="https://via.placeholder.com/500x250" alt="img">
+        </div>
+
+        <img class="flex-item desktop-33 tablet-100" src="https://via.placeholder.com/500x1000" alt="img">
+    </div>
+</body>
+
+</html>

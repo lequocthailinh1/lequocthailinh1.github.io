@@ -1,0 +1,194 @@
+.navbar {
+  display: flex;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.banner{
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.main1 {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.row {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.grow {
+  flex-grow: 1;
+}
+.collapse{
+  display: flex;
+  justify-content: flex-end;
+}
+.minimø {
+  font-size: 30px;
+  font-family: "Myriad Pro";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 0.8;
+  text-align: center;
+  margin: 20px;
+}
+.lifestyle {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  text-transform: uppercase;
+  line-height: 1.714;
+  margin: 20px;
+  text-align: center;
+}
+.photodiary {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  text-transform: uppercase;
+  line-height: 1.714;
+  margin: 20px;
+  text-align: center;
+}
+.travel {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  text-transform: uppercase;
+  margin: 20px;
+  text-align: center;
+}
+.music {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  text-transform: uppercase;
+  line-height: 1.714;
+  margin: 20px;
+  text-align: center;
+}
+
+
+
+
+/*first post*/
+.banner{
+  margin-bottom: 50px;
+}
+.card {
+  border-radius: 0px;
+  border: 0px;
+}
+.main1{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.titcard1 {
+  font-size: 14px;
+  font-family: "Ubuntu";
+  color: rgb(180, 173, 158);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.The_perfect_weekend_getaway_ {
+  font-size: 30px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 1.2;
+}
+.Leave_a_comment {
+  font-size: 14px;
+  font-family: "Ubuntu";
+  color: rgb(180, 173, 158);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.titcard2 {
+  font-size: 30px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 1.2;
+}
+
+.banner2 {
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+  height: 287px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.Sign_up{
+  font-size: 30px;
+  font-family: "Playfair Display";
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 2%;
+}
+.line {
+  border-width: 1px;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-left:  none;
+  border-right:  none;
+  border-bottom:  none;
+  width: 90%;
+  height: 0px;
+}
+.Enter {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  padding: 0px;
+  text-align:left;
+  margin: 0px;
+}
+
+/*footer*/
+
+.footer{
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+  height: 287px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grow {
+  flex-grow: 1;
+}
+.Terms_and_conditions {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(0, 0, 0);
+  line-height: 1.714;
+  z-index: 306;
+  padding-right: 20px;
+}
+.Privacy {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(0, 0, 0);
+  line-height: 1.714;
+  z-index: 307;
+}
+/*.row {
+
+*/
+.Follow {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(0, 0, 0);
+  line-height: 1.714;
+  z-index: 308;
+}
+

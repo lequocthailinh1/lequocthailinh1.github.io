@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Layout 5</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            height: 50px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15px;
+        }
+
+        .header-item {
+            width: 90px;
+            height: 30px;
+            /* padding: 7.5px; */
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 15px;
+        }
+
+        .main-item {
+            width: calc((100% - 10px) / 2);
+            margin-bottom: 15px;
+        }
+
+        .grow {
+            flex-grow: 1;
+        }
+
+        @media (max-width: 568px) {
+            .header-item {
+                width: 60px;
+            }
+
+            .grow {
+                display: none;
+            }
+
+            main {
+                padding-top: 0;
+            }
+
+            .main-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="header-item" src="https://via.placeholder.com/500x250" alt="img">
+        <img class="header-item" src="https://via.placeholder.com/500x250" alt="img">
+        <div class="grow"></div>
+        <img class="header-item" src="https://via.placeholder.com/500x250" alt="img">
+    </header>
+
+    <main>
+        <img class="main-item" src="https://via.placeholder.com/500x500" alt="img">
+        <img class="main-item" src="https://via.placeholder.com/500x500" alt="img">
+    </main>
+
+</body>
+
+</html>

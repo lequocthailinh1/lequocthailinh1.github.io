@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Layout 4</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 7.5px;
+        }
+
+        .child {
+            width: 90px;
+            height: 30px;
+            padding: 7.5px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        main {
+            padding: 15px;
+        }
+
+        .full {
+            width: 100%;
+        }
+
+        .grow {
+            flex-grow: 1;
+        }
+
+        @media (max-width: 568px) {
+            .child {
+                width: 60px;
+            }
+
+            .grow {
+                display: none;
+            }
+            main {
+                padding-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="child" src="https://via.placeholder.com/500x250" alt="img">
+        <img class="child" src="https://via.placeholder.com/500x250" alt="img">
+        <div class="grow"></div>
+        <img class="child" src="https://via.placeholder.com/500x250" alt="img">
+    </header>
+
+    <main>
+        <img class="full" src="https://via.placeholder.com/500x250" alt="img">
+    </main>
+
+</body>
+
+</html>

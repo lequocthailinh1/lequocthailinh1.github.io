@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Layout 7</title>
+    <style>
+        header {
+            height: 60px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        .menu-list {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-item {
+            display: inline-block;
+        }
+
+        .menu-item:not(.last-one)::after {
+            content: " |";
+        }
+
+        .main-item {
+            width: 100%;
+        }
+
+        .menu-toggler {
+            border: 1px solid gray;
+            background: none;
+            display: none;
+        }
+
+        .menu-toggler-icon {
+            width: 25px;
+        }
+
+        .desktop-hide {
+            display: none;
+        }
+
+        main {
+            margin-top: 15px;
+        }
+
+        @media (max-width: 568px) {
+            header {
+                height: auto;
+            }
+
+            .logo {
+                position: absolute;
+                top: 5px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .login {
+                display: none;
+            }
+
+            .menu {
+                display: none;
+                width: 100%;
+                text-align: center;
+            }
+
+            .menu-item {
+                display: block;
+            }
+
+            .menu-item:not(.last-one)::after {
+                content: "";
+            }
+
+            .menu-toggler {
+                display: block;
+            }
+
+            .mobile-show {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+
+        <button class="menu-toggler">
+            <img class="menu-toggler-icon" src="button.png" alt="button">
+        </button>
+
+        <nav class="menu">
+            <ul class="menu-list">
+                <li class="menu-item desktop-hide mobile-show">Trang chủ</li>
+                <li class="menu-item">Menu 1</li>
+                <li class="menu-item">Menu 2</li>
+                <li class="menu-item last-one">Menu 3</li>
+                <li class="menu-item desktop-hide mobile-show">Login</li>
+                <li class="menu-item desktop-hide mobile-show">Register</li>
+            </ul>
+        </nav>
+
+        <div class="login">Login | Register</div>
+    </header>
+
+    <main>
+        <img class="main-item" src="https://via.placeholder.com/500x500" alt="img">
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $('.menu-toggler').on('click', function () {
+            $('.menu').slideToggle();
+        })
+    </script>
+</body>
+
+</html>
