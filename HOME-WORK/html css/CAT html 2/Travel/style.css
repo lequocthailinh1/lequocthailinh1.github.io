@@ -81,7 +81,7 @@ header {
     	.navbar {
     		width: 1082px;
     	}
-
+    }
     	.custom-control {
     		border: 1px solid white;
     		border-top: none;
@@ -338,3 +338,10 @@ align-items: center;
 .links2 {
 	color: white;
 }
+
+
+/*@media only screen and (max-width: 	500px){
+    	.ppp {
+    		width: 100%;
+    	}
+}*/
