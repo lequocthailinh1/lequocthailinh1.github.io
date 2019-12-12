@@ -14,7 +14,6 @@ header {
 	background-repeat: no-repeat;
 	background-size: 100%;
 	padding-top: 30px;
-	/*  	position: relative;*/
 }
 
 .nav-link {
@@ -24,7 +23,6 @@ header {
 	font-size: 18px;
 	line-height: 24px;
 	color: white;
-	/* identical to box height, or 133% */
 
 }
 .nav-item {
