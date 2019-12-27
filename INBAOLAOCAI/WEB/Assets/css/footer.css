@@ -1,0 +1,102 @@
+
+.footer {
+	background-color: #212226;
+}
+.ndf {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.truso {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+	/* identical to box height */
+
+	color: #FFFFFF;
+	padding-bottom: 15px;
+}
+.diachi {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 24px;
+
+	color: #FFFFFF;
+	padding-bottom: 8px;
+}
+.tlft {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+	/* identical to box height */
+
+	color: #FFFFFF;
+	padding-bottom: 15px;
+
+}
+.lft {
+	width: 100%;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 24px;
+	padding-bottom: 8px;
+	/* identical to box height */
+
+	color: #FFFFFF;
+}
+.linkft {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+	body {
+		background-color: #212226;
+	}
+	.logot {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		padding-bottom: 10px;
+	}
+	.truso {
+		font-size: 14px;
+		line-height: 20px;
+		/* identical to box height */
+
+		color: #FFFFFF;
+		padding-bottom: 10px;
+	}
+	.diachi {
+		padding-bottom: 0px;
+	}
+	.tlft {
+		padding-top: 13px;
+		padding-bottom: 10px;
+
+	}
+	.lft {
+	padding-bottom: 0px;
+	}
+	.lhm {
+		display: flex;
+		flex-wrap: nowrap;
+		padding: 10px;
+	}
+	.lh {
+		display: flex;
+		justify-content: center;
+	}
+	.eee{
+		width: 50%;
+	}
+}

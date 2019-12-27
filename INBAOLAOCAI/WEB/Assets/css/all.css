@@ -1,0 +1,12 @@
+@import 'header.css';
+@import 'footer.css';
+@import "trangchu.css";
+@import "gioithieu.css";
+
+
+body {
+	background-image: url("../../Assets/img/ANH NENc.png");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}

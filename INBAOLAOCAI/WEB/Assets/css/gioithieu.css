@@ -1,0 +1,125 @@
+
+
+.nengt {
+width: 297px;
+height: 50px;
+background: #585555;
+border-radius: 10px 10px 0px 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-bottom: 1px solid white;
+/*background: rgba(255, 255, 255, 0.2);*/
+}
+.tieudegt {
+	font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 21px;
+line-height: 30px;
+color: #FFFFFF;
+padding-left: 10px;
+}
+p {
+	margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+
+.bmtc {
+	font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 17px;
+line-height: 24px;
+/* identical to box height */
+
+color: #FFFFFF;
+padding: 10px;
+padding-left: 75px;
+padding-top: 20px;
+background: #585555;
+}
+
+.nenbmtc {
+	background: rgba(255, 255, 255, 0.2);
+}
+.sodobmtc {
+	background: rgba(255, 255, 255, 0.2);
+	display: flex;
+	justify-content: center;
+	padding-bottom: 50px;
+}
+
+.sodosvg {
+	padding-top: 15px;
+}
+
+
+.nen1 {
+	background-image: url("../../Assets/img/nengt1.png");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 400px;
+
+}
+
+.card-title11 {
+	font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+color: #FFFFFF;
+}
+.card-text11 {
+	font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 25px;
+/* or 179% */
+
+color: #FFFFFF;
+}
+.nenc {
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 0px;
+	border:	0px;
+}
+
+@media only screen and (max-width: 700px) {
+	.main1{
+		display: flex;
+		justify-content:space-around;
+		    padding-top: 0px;
+	}
+	.btmain1 {
+		width: 150px;
+		height: 170px;
+	}
+	.main2 {
+		padding-top: 20px;
+	}
+	.main3 {
+		padding: 0px;
+	}
+	.ooo{
+		display: none;
+		width: 100%;
+	}
+	.nenmb {
+		width: 150px;
+		height: 150px;
+		margin-top:  20px;
+	}
+	.rowtc {
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
+
+
+

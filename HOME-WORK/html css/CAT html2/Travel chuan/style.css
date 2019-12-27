@@ -1,4 +1,7 @@
 
+@import  "text-align: "
+
+
 * {
 	box-sizing: border-box;
 }
@@ -600,3 +603,56 @@ padding-left: 105px;
 		}
 
 	}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+	body {
+		background-color: black;
+	}
+	nav {
+		width: 100%;
+	}
+	.navbar-brand {
+		width: 20%;
+	}
+	.navbar-toggler {
+		border-color: white;
+/*		width: 100px;
+		display: flex;
+		justify-content: center;*/
+	}
+	.hot {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		position: relative;
+    top: -20px;
+    right: 0px;
+}
+	}
+	.menu {
+    position: relative;
+    top: -20px;
+    left: 0px;
+	}
+	.logo {
+		width: 150px;
+	}
+	.nendnk {
+		margin: auto;
+	}
+	.hotline {
+		width: 100%;
+		margin: auto;
+		margin-bottom: 10px;
+	}
+}
+
+

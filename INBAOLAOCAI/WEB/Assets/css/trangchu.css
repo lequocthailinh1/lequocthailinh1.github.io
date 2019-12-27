@@ -1,0 +1,159 @@
+.main1 {
+	display: flex;
+	justify-content: space-between;
+	padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 100px;
+}
+.main2{
+		display: flex;
+	justify-content: center;
+	padding-top: 80px;
+
+}
+
+.chutc {
+	font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 17px;
+line-height: 24px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+}
+.rowtc {
+	display: flex;
+	justify-content: space-between;
+}
+.nenbb {
+	width: 180px;
+	height: 180px;
+	background-image: url("../../Assets/img/nenbb.png");
+	background-position: top;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nenhd {
+	width: 180px;
+	height: 180px;
+	background-image: url("../../Assets/img/nenhd.png");
+	background-position: top;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nensb {
+	width: 180px;
+	height: 180px;
+	background-image: url("../../Assets/img/nensb.png");
+	background-position: top;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nentr {
+	width: 180px;
+	height: 180px;
+	background-image: url("../../Assets/img/nentr.png");
+	background-position: top;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nentui {
+	width: 180px;
+	height: 180px;
+	background-image: url("../../Assets/img/nentui.png");
+	background-position: top;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nenk {
+	width: 180px;
+	height: 180px;
+	background-image: url("../../Assets/img/nenk.png");
+	background-position: top;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nenmain3 {
+	background-color: #212226;
+}
+
+
+.ooo {
+	height: 35px;
+	border: 1px solid white;
+	opacity: 50%;
+}
+.trai {
+	border-left: 0px;
+	border-top: 0px;
+	border-bottom: 0px;
+}
+.phai {
+	border-right: 0px;
+	border-top: 0px;
+	border-bottom: 0px;
+}
+.dl {
+	border-left: 0px;
+	border-bottom: 0px;
+}
+.dc {
+	border-right: 0px;
+	border-bottom: 0px;
+}
+.dhb {
+	border-top:0px;
+}
+.main3 {
+	padding-bottom: 50px;
+}
+
+
+@media only screen and (max-width: 700px) {
+	.main1{
+		display: flex;
+		justify-content:space-around;
+		    padding-top: 0px;
+	}
+	.btmain1 {
+		width: 150px;
+		height: 170px;
+	}
+	.main2 {
+		padding-top: 20px;
+	}
+	.main3 {
+		padding: 0px;
+	}
+	.ooo{
+		display: none;
+		width: 100%;
+	}
+	.nenmb {
+		width: 150px;
+		height: 150px;
+		margin-top:  20px;
+	}
+	.rowtc {
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
+
+
+
