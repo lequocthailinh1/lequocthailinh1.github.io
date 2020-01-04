@@ -1,9 +1,9 @@
 // Gọi header.html, footer.html, menu.html
-$('#header').load('../../Load/header.html');
+$('#header').load('Load/header.html');
 $('#footer').load('Load/footer.html');
-$('#trangchu').load('load/trangchu.html');
-$('#gioithieu').load('load/gthieu.html');
-$('#doitac').load('load/doitac.html');
-$('#lienhe').load('load/lihe.html');
-$('#hoatdong').load('load/hdong.html');
-$('#sanpham').load('load/spham.html');
+$('#trangchu').load('Load/trangchu.html');
+$('#gioithieu').load('Load/gthieu.html');
+$('#doitac').load('Load/doitac.html');
+$('#lienhe').load('Load/lihe.html');
+$('#hoatdong').load('Load/hdong.html');
+$('#sanpham').load('Load/spham.html');
