@@ -1,15 +1,15 @@
 
 
 .nengt {
-width: 297px;
+width: 100%;
 height: 50px;
 background: #585555;
 border-radius: 10px 10px 0px 0px;
 display: flex;
-justify-content: center;
 align-items: center;
 border-bottom: 1px solid white;
-/*background: rgba(255, 255, 255, 0.2);*/
+padding-left: 75px;
+margin-top: 20px;
 }
 .tieudegt {
 	font-family: Roboto;
@@ -56,15 +56,6 @@ background: #585555;
 }
 
 
-.nen1 {
-	background-image: url("../../Assets/img/nengt1.png");
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	height: 400px;
-
-}
-
 .card-title11 {
 	font-family: Roboto;
 font-style: normal;
@@ -72,6 +63,7 @@ font-weight: bold;
 font-size: 18px;
 line-height: 25px;
 color: #FFFFFF;
+padding: 0px;
 }
 .card-text11 {
 	font-family: Roboto;
@@ -79,7 +71,6 @@ font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 25px;
-/* or 179% */
 
 color: #FFFFFF;
 }
@@ -89,37 +80,128 @@ color: #FFFFFF;
 	border:	0px;
 }
 
-@media only screen and (max-width: 700px) {
-	.main1{
-		display: flex;
-		justify-content:space-around;
-		    padding-top: 0px;
-	}
-	.btmain1 {
-		width: 150px;
-		height: 170px;
-	}
-	.main2 {
-		padding-top: 20px;
-	}
-	.main3 {
-		padding: 0px;
-	}
-	.ooo{
-		display: none;
-		width: 100%;
-	}
-	.nenmb {
-		width: 150px;
-		height: 150px;
-		margin-top:  20px;
-	}
-	.rowtc {
-		display: flex;
-		justify-content: space-around;
-	}
+.card-body1{
+	padding: 30px;
+}
+.nen1 {
+	width: 100%;
+	padding: 30px;
+}
+
+/*SO DO BO MAY*/
+.nenbmtc1 {
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+.rowgt1 {
+	display: flex;
+	justify-content: center;
+}
+.rowgt2{
+	display: flex;
+	justify-content: space-between;
+}
+.rowgt3 {
+	display: flex;
+	justify-content: space-between;
+}
+.nhdqt3 {
+	width: 200px;
+height: 60px;
+
+background: #6D7778;
+border: 1px solid rgba(255, 255, 255, 0.3);
+box-sizing: border-box;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 0px;
+}
+
+.chdqt{
+	font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+
+color: #FFFFFF;
+text-align: center;
+
+}
+.nhdqt {
+	background: #6D7778;
+border: 1px solid rgba(255, 255, 255, 0.3);
+box-sizing: border-box;
+border-radius: 10px;
+width: 300px;
+height: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 0px;
+}
+
+.duongke{
+	height: 30px;
+	border: 1px solid white;
+}
+.gtphai {
+	border-right: 0px;
+	border-bottom: 0px;
+}
+.gttrai {
+	border-left: 0px;
+	border-bottom: 0px;
+}
+.duongketren {
+	border-top: 0px;
+}
+.riengbks1 {
+	border-right: 	0px;
+}
+.riengbks2{
+	border-left: 	0px;
+}
+.kttc {
+	border-top: 1px solid white;
+}
+.pkd1{
+	border-left: 0px;
+}
+.pkd2{
+	border-right: 0px;
+}
+.svgmobile {
+	display: none;
 }
 
 
 
+@media only screen and (max-width: 700px) {
+	.nenbmtc1 {
+		display: none;
+	}
+	.svgmobile {
+	display: block;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+	.nenc{
+	background-color: black;
+	}
+	.nen1 {
+	width: 100%;
+	padding: 15px;
+	}
+	.card-body1{
+	padding: 15px;
+	}
+	.nengt {
+	margin-top: 10px;
+	}
+
+}
 

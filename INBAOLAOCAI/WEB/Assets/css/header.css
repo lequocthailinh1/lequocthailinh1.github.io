@@ -1,5 +1,8 @@
 
-
+a:hover {
+    color: #008593;
+    text-decoration: underline;
+}
 .bodernav {
 	border: 2px solid white;
 	border-top: 0px;
@@ -7,7 +10,7 @@
 	border-right: 0px;
 }
 
-.nav-link {
+.nav-link1 {
 
 	font-family: Roboto;
 	font-style: normal;

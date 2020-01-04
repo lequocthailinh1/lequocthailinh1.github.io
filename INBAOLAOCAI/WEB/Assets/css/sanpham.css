@@ -1,0 +1,80 @@
+
+/*Sửa nền của các tiêu đề ở phần giới thiệu*/
+
+a {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
+.nav-link2 {
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 25px;
+ color: #AAAAAA;
+ padding: 10px;
+}
+.nav-tabs .nav-link {
+     border: 0px;
+     border-top-left-radius: 0px;
+     border-top-right-radius: 0px;
+}
+.nav-tabs {
+    border-bottom: 0px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+.nav-tabs1 {
+	display: flex;
+	justify-content: space-evenly;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.nentabsp {
+	color: white;
+}
+.imgsanpham{
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.nennoidungsanpham {
+	padding-top: 20px;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.2);
+}
+.nav-linkc {
+	padding-right: 15px;
+}
+.cndsp{
+	padding: 5px;
+}
+.nav-item1 {
+	width: 100%;
+}
+@media only screen and (max-width: 700px) {
+	/*.nav-item1{
+		width: 100%;
+	}
+	.nav-tabs1{
+		display: flex;
+	}
+	.nennoidungsanpham {
+		padding-top: 3px;
+	}*/
+	.mobilen {
+		display: none;
+	}
+	.nennoidungsanpham {
+     background: black;
+	}
+	.nav-tabs1 {
+	border-bottom: 2px solid white;
+	}
+}
+
