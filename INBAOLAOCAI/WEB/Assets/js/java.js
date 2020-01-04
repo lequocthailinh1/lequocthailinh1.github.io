@@ -1,6 +1,6 @@
 // Gọi header.html, footer.html, menu.html
 $('#header').load('../../Load/header.html');
-$('#footer').load('load/footer.html');
+$('#footer').load('Load/footer.html');
 $('#trangchu').load('load/trangchu.html');
 $('#gioithieu').load('load/gthieu.html');
 $('#doitac').load('load/doitac.html');
