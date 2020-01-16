@@ -36,12 +36,12 @@
 		<div class="col-lg-1"></div>
 		<form class="col-lg-8 guimail">
 			<div class="form-group form-group1">
-				<label for="formGroupExampleInput" class="chumail">Họ tên:</label>
-				<input type="text" class="form-control form-control1" id="formGroupExampleInput" placeholder="Họ tên của bạn">
+				<label for="formGroupExampleInput" class="chumail">Họ tên: <span class="bb">*</span></label>
+				<input type="text" class="form-control form-control1" id="formGroupExampleInput" placeholder="Họ tên của bạn" required>
 			</div>
 			<div class="form-group form-group1">
-				<label for="formGroupExampleInput2" class="chumail">SĐT:</label>
-				<input type="tel" class="form-control form-control1" id="formGroupExampleInput2" placeholder="Số điện thoại của bạn">
+				<label for="formGroupExampleInput2" class="chumail">SĐT: <span class="bb">*</span></label>
+				<input type="tel" name="phone" pattern="[0-9]{10}" class="form-control form-control1" id="formGroupExampleInput2" placeholder="Số điện thoại của bạn" required>
 			</div>
 			<div class="form-group form-group1">
 				<label for="formGroupExampleInput2" class="chumail">Địa chỉ:</label>
@@ -49,9 +49,9 @@
 			</div>
 			<div class="form-group form-group1">
 				<label for="formGroupExampleInput2" class="chumail">Email:</label>
-				<input type="text" class="form-control form-control1" id="formGroupExampleInput2" placeholder="Email của bạn">
+				<input type="email" name="email" class="form-control form-control1" id="formGroupExampleInput2" placeholder="Email của bạn">
 			</div>
-			<button type="submit" class="btn btn-primary mb-2 sublh">Gửi</button>
+			<button type="submit" class="btn btn-primary mb-2 sublh nutguilh">Gửi</button>
 		</form>
 	</div>
 </div>

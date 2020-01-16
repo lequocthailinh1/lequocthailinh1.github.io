@@ -1,157 +1,66 @@
-.main1 {
+
+.nentc5 {
+	width: 100%;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 25px;
+}
+.nentc5 {
+	width: 250px;
+	height: 250px;
 	display: flex;
-	justify-content: space-between;
-	padding-right: 15px;
-    padding-left: 15px;
-    padding-top: 100px;
+	align-items: center;
+	text-align: center;
+	}
+a {
+    text-decoration: none;
 }
-.main2{
-		display: flex;
-	justify-content: center;
-	padding-top: 80px;
-
-}
-
-.chutc {
-	font-family: Roboto;
+.chutc5 {
+font-family: Roboto;
 font-style: normal;
 font-weight: bold;
-font-size: 17px;
-line-height: 24px;
-/* identical to box height */
-text-align: center;
-
+font-size: 20px;
+line-height: 28px;
 color: #FFFFFF;
+padding-top: 20px;
 }
-.rowtc {
+.icontc5 {
+	height: 80px;
+}
+
+.tc5 {
 	display: flex;
 	justify-content: space-between;
-}
-.nenbb {
-	width: 180px;
-	height: 180px;
-	background-image: url("../../Assets/img/nenbb.png");
-	background-position: top;
-	background-repeat: no-repeat;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.nenhd {
-	width: 180px;
-	height: 180px;
-	background-image: url("../../Assets/img/nenhd.png");
-	background-position: top;
-	background-repeat: no-repeat;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.nensb {
-	width: 180px;
-	height: 180px;
-	background-image: url("../../Assets/img/nensb.png");
-	background-position: top;
-	background-repeat: no-repeat;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.nentr {
-	width: 180px;
-	height: 180px;
-	background-image: url("../../Assets/img/nentr.png");
-	background-position: top;
-	background-repeat: no-repeat;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.nentui {
-	width: 180px;
-	height: 180px;
-	background-image: url("../../Assets/img/nentui.png");
-	background-position: top;
-	background-repeat: no-repeat;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.nenk {
-	width: 180px;
-	height: 180px;
-	background-image: url("../../Assets/img/nenk.png");
-	background-position: top;
-	background-repeat: no-repeat;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.nenmain3 {
-	background-color: #212226;
+	padding-top: 80px;
 }
 
-
-.ooo {
-	height: 35px;
-	border: 1px solid white;
-	opacity: 50%;
-}
-.trai {
-	border-left: 0px;
-	border-top: 0px;
-	border-bottom: 0px;
-}
-.phai {
-	border-right: 0px;
-	border-top: 0px;
-	border-bottom: 0px;
-}
-.dl {
-	border-left: 0px;
-	border-bottom: 0px;
-}
-.dc {
-	border-right: 0px;
-	border-bottom: 0px;
-}
-.dhb {
-	border-top:0px;
-}
-.main3 {
-	padding-bottom: 50px;
+.tc5d {
+	padding-top: 50px;
+	padding-bottom: 80px;
 }
 
 
 @media only screen and (max-width: 700px) {
-	.main1{
-		display: flex;
-		justify-content:space-around;
-		    padding-top: 0px;
+	body {
+		background-color: black;
 	}
-	.btmain1 {
-		width: 150px;
-		height: 170px;
+	.tc5 {
+		    display: block;
 	}
-	.main2 {
+	.nentc5 {
+	border: 1px solid white;
+	}
+	.pdmb {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.tc5d {
+		padding-top: 10px;
+		padding-bottom: 30px;
+	}
+	.tc5 {
 		padding-top: 20px;
 	}
-	.main3 {
-		padding: 0px;
-	}
-	.ooo{
-		display: none;
-		width: 100%;
-	}
-	.nenmb {
-		width: 150px;
-		height: 150px;
-		margin-top:  20px;
-	}
-	.rowtc {
-		display: flex;
-		justify-content: space-around;
-	}
+
 }
 
 

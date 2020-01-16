@@ -39,7 +39,7 @@
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
 	.nengt {
 		width: 100%;
 		padding-right: 10px;
@@ -47,6 +47,15 @@
 	}
 	.tieudegt{
 		font-size: 19px;
+	}
+	.carousel-caption {
+    position: unset
+	}
+	.carousel-indicators{
+		position: unset
+	}
+	.slide1 {
+		background-color: black;
 	}
 }
 

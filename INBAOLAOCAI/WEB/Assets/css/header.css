@@ -1,7 +1,18 @@
 
 a:hover {
     color: #008593;
-    text-decoration: underline;
+    text-decoration: none;
+}
+.chudn:hover {
+	background-color: black;
+	color: #008593;
+	border-radius: 25px;
+}
+.nutguilh:hover {
+	background-color: #008593;
+}
+.logochinh {
+	width: 200px;
 }
 .bodernav {
 	border: 2px solid white;
@@ -48,6 +59,7 @@ a:hover {
 	justify-content: center;
 	align-items: center;
 	margin-left: 50px;
+	border-radius: 20px;
 }
 .dnk {
 	font-family: Roboto;
@@ -76,9 +88,30 @@ a:hover {
 .menu {
 	padding-right: 0px;
 }
-
-
-@media only screen and (max-width: 700px) {
+.chudn {
+	color: white;
+}
+.nendn {
+	background-color: black;
+	border-radius: 20px;
+}
+.htdk {
+	color: white;
+}
+.tenho {
+	margin-bottom: 16px;
+	margin-top: 16px;
+}
+.inpth{
+	margin-top: 8px;
+}
+.bddangky {
+	padding-top: 10px;
+/*	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;*/
+}
+@media only screen and (max-width: 750px) {
 	body {
 		background-color: #212226;
 	}
@@ -105,6 +138,12 @@ a:hover {
 	}
 	.mh {
 		margin: 0px;
+	}
+	.logombl {
+		    margin-right: 0px;
+	}
+	.logochinh{
+		width: 150px;
 	}
 }
 

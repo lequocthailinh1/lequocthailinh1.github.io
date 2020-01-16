@@ -1,0 +1,2 @@
+query validation
+https://isotope.metafizzy.co/

@@ -7,3 +7,4 @@ $('#doitac').load('Load/doitac.html');
 $('#lienhe').load('Load/lihe.html');
 $('#hoatdong').load('Load/hdong.html');
 $('#sanpham').load('Load/spham.html');
+$('#quenmatkhau').load('Load/quenmatkhau.html');
