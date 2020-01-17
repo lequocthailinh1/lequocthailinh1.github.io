@@ -39,7 +39,7 @@ padding-top: 20px;
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 811px) {
 	body {
 		background-color: black;
 	}
@@ -64,5 +64,34 @@ padding-top: 20px;
 }
 
 
+@media only screen and (width: 1024px){
+	.nentc5 {
+		width: 220px;
+    height: 220px;
+	}
+}
 
+@media only screen and (width: 812px){
+	.nentc5 {
+		width: 170px;
+    height: 170px;
+	}
+
+	.pdmb{
+		width: 170px;
+	}
+	.icontc5{
+		height: 50px;
+	}
+	.chutc5 {
+		font-size: 14px;
+	}
+	.tc5 {
+    padding-top: 30px;
+	}
+	.tc5d {
+    padding-top: 20px;
+    padding-bottom: 30px;
+	}
+}
 

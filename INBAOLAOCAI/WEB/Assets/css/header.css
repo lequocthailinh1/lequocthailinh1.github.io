@@ -3,10 +3,12 @@ a:hover {
     color: #008593;
     text-decoration: none;
 }
+
 .chudn:hover {
-	background-color: black;
-	color: #008593;
-	border-radius: 25px;
+	border: 1px solid #008593;
+	color: white;
+	border-radius: 20px;
+	background-color: #008593;
 }
 .nutguilh:hover {
 	background-color: #008593;
@@ -22,13 +24,11 @@ a:hover {
 }
 
 .nav-link1 {
-
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 17px;
 	line-height: 20px;
-
 	color: #FFFFFF;
 }
 
@@ -53,7 +53,8 @@ a:hover {
 .nendnk {
 	width: 140px;
 	height: 35px;
-	background: #B4B4B4;
+	/*background: #B4B4B4;*/
+	background-color: white;
 	border-radius: 10px;
 	display: flex;
 	justify-content: center;
@@ -89,10 +90,10 @@ a:hover {
 	padding-right: 0px;
 }
 .chudn {
-	color: white;
+	color: black;
 }
 .nendn {
-	background-color: black;
+	background-color: white;
 	border-radius: 20px;
 }
 .htdk {
@@ -107,11 +108,8 @@ a:hover {
 }
 .bddangky {
 	padding-top: 10px;
-/*	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 20px;*/
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 820px) {
 	body {
 		background-color: #212226;
 	}
@@ -147,3 +145,12 @@ a:hover {
 	}
 }
 
+@media only screen and (width: 1024px){
+	.nav-link1{
+		font-size: 14px;
+	}
+	.navbar-expand-lg .navbar-nav .nav-link {
+	padding-left: 15px;
+	padding-top: 50px;
+	}
+}
