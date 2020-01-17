@@ -42,7 +42,9 @@ span {
 	font-size: 10px;
 	color: red;
 }
-
+.nutguilh1{
+	margin-left: 15px;
+}
 .create {
 	width: 	700px;
 	font-size: 	70px;
@@ -53,4 +55,7 @@ span {
 }
 .dangkyaa{
 	padding-bottom: 15px;
+}
+.bddangky {
+	margin-bottom: 20px;
 }

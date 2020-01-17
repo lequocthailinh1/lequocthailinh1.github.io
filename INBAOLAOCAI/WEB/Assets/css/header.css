@@ -3,8 +3,13 @@ a:hover {
     color: #008593;
     text-decoration: none;
 }
-
-.chudn:hover {
+.nendnk:hover {
+	background-color: #008593;
+}
+.dnk:hover{
+	color: white;
+}
+.chudn1:hover {
 	border: 1px solid #008593;
 	color: white;
 	border-radius: 20px;
@@ -49,7 +54,13 @@ a:hover {
 
 	color: #FFFFFF;
 }
-
+.nendnk2 {
+	width: 140px;
+	margin-left: 50px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+}
 .nendnk {
 	width: 140px;
 	height: 35px;
@@ -92,6 +103,10 @@ a:hover {
 .chudn {
 	color: black;
 }
+.chudn1 {
+	color: black;
+	margin-bottom: 20px;
+}
 .nendn {
 	background-color: white;
 	border-radius: 20px;
@@ -126,8 +141,9 @@ a:hover {
 		padding: 0px;
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: space-between;
 	}
-	.nendnk {
+	.nendnk2 {
 		margin:	auto;
 	}
 	.navbar-expand-lg .navbar-nav .nav-link {
