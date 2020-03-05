@@ -25,18 +25,18 @@ body {
 	animation-name: change;
 	animation-duration: 2s;
 }
-.lh:hover{
-	animation-name: change;
-	animation-duration: 2s;
+/*.icon:hover{
+	animation-name: changefb;
 }
 
-@keyframes changemenu {
-0% {transform: rotate(0deg)}
-50% {transform: rotate(-5000deg)}
-100% {transform: rotate(0deg)}
-}
+@keyframes changefb {
+	.icon{
+		display: none;
+	}
+}*/
 .nentc5:hover {
-	animation-name: changemenu;
+	background-color: #008593;
+	/*animation-name: changemenu;
 	animation-duration: 0.2s;
-	animation-fill-mode: forwards
+	animation-fill-mode: forwards*/
 }
